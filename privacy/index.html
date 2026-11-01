@@ -91,12 +91,14 @@
 <p>PrivaPage keeps its own copy of each PDF you import, extracts its text on your device (using Apple's on-device Vision framework for image-only pages), and reads it aloud with your device's built-in voices or, if you download it, the Kokoro neural voice (about 340 MB). Reading positions, bookmarks, folders, and settings stay on your device. PrivaPage asks for no special permissions; it opens only the files you choose.</p>
 
 <h2 id="privameet" class="app-tag"><img src="../assets/img/privameet-256.png" alt="" width="36" height="36">PrivaMeet</h2>
-<p>PrivaMeet records meetings and processes them on your device:</p>
+<p>PrivaMeet records meetings and processes them on your device. On a Mac:</p>
 <ul>
 <li><strong>Transcription</strong> uses Whisper through the open-source WhisperKit library (about 220 MB download).</li>
 <li><strong>Summaries</strong> use an open-source Qwen language model running through Apple's MLX (about 1 GB, or about 300 MB for the compact option).</li>
 <li><strong>Speaker identification</strong>, if you choose it, analyzes the voices in a recording on your device to tell speakers apart and label its transcript. Its models (about 500 MB) download only after you confirm.</li>
 </ul>
+<h3>On iPhone and iPad</h3>
+<p>On iPhone and iPad, PrivaMeet uses the AI built into your device instead of downloading its own models. Recordings are transcribed by Apple's on-device speech recognition, and summaries, task lists, titles, and chat answers are written by Apple Intelligence's on-device model. Both run on your iPhone or iPad; PrivaMeet doesn't use Apple's Private Cloud Compute or any server-based speech recognition, and your recordings, transcripts, summaries, and questions never leave the device. The first time it's needed, iOS may download Apple's speech recognition assets for English from Apple; that download is made by iOS, is shared with other apps, and carries none of your content. PrivaMeet itself makes no network requests on iPhone or iPad, with one optional exception: the first time you tap Identify Speakers, it asks before downloading Argmax's speaker identification models (about 35 MB) from Hugging Face, which then run on your device. If Apple Intelligence isn't available or is turned off, PrivaMeet still records and transcribes meetings, and nothing is sent anywhere else instead.</p>
 <p>Permissions: <strong>Microphone</strong>, to record meetings you start; and on iPhone and iPad, <strong>Face ID or Touch ID</strong>, only if you turn on App Lock. Authentication is handled by the system; PrivaMeet never receives biometric data, only whether authentication succeeded. When you share or export a recording or transcript, you choose where it goes, and the receiving app or service handles it under its own terms.</p>
 
 <h2 id="privastudy" class="app-tag"><img src="../assets/img/privastudy-256.png" alt="" width="36" height="36">PrivaStudy</h2>
