@@ -145,3 +145,8 @@ details p, details ul { margin-top: 10px; color: var(--ink-2); }
   .nav nav a { padding: 6px 9px; font-size: 14px; }
   .app-card { padding: 22px; }
 }
+
+.pill.primary { background: var(--accent); color: var(--accent-ink); border-color: transparent; font-weight: 600; }
+.pill.primary:hover { filter: brightness(1.08); }
+.pill.big { font-size: 17px; padding: 12px 24px; }
+.prose ol { padding-left: 1.3em; }

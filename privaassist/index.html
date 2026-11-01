@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111615" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+<link rel="stylesheet" href="../assets/style.css">
+<title>PrivaAssist for Mac | PrivaSuite</title>
+<meta name="description" content="Download PrivaAssist, a local assistant for your Mac with on-device AI.">
+<link rel="canonical" href="https://privasuite.harrisonsmith.ai/privaassist/">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="../index.html" aria-label="PrivaSuite home"><img src="../assets/img/favicon.svg" alt="" width="28" height="28"><span>PrivaSuite</span></a>
+    <nav aria-label="Primary">
+      <a href="../index.html#apps" aria-current="page">Apps</a>
+      <a href="../privacy/index.html">Privacy</a>
+      <a href="../support/index.html">Support</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="hero"><div class="wrap">
+  <div class="app-tag" style="margin-bottom:20px"><img src="../assets/img/privaassist-256.png" alt="" width="72" height="72" style="width:72px;height:72px;border-radius:16px"></div>
+  <h1>PrivaAssist for Mac</h1>
+  <p class="lede">Reads documents and your screen aloud, transcribes and summarizes meetings, documents workflows, and organizes files, with AI that runs on your Mac.</p>
+  <p><a class="pill primary big" href="https://github.com/hsmith-dev/privasuite/releases/latest/download/PrivaAssist.dmg">Download PrivaAssist 1.0</a></p>
+  <p class="muted">Requires macOS 26.6 or later on a Mac with Apple Silicon. Signed with a Developer ID and notarized by Apple.</p>
+</div></section>
+<section class="band"><div class="wrap"><div class="prose">
+  <h2>Install</h2>
+  <ol>
+    <li>Open <strong>PrivaAssist.dmg</strong> from your Downloads folder.</li>
+    <li>Drag <strong>PrivaAssist</strong> onto the <strong>Applications</strong> folder.</li>
+    <li>Open PrivaAssist from Applications. The welcome tour shows what each mode does.</li>
+  </ol>
+  <h2>First run</h2>
+  <ul>
+    <li><strong>AI models</strong> download only when you ask, from Settings or the first time a feature needs one: the voice (about 340 MB), transcription (about 220 MB), and the language model for summaries (about 3 GB). After that, everything works offline.</li>
+    <li><strong>Permissions</strong> are requested only when you press a feature's Request button: Microphone for meetings and dictation, Screen Recording for system audio and on-screen text, Accessibility for Read Screen and Workflow. Skip any you don't need.</li>
+    <li><strong>Hosted models</strong> are off. You can turn them on per feature with your own API key; see the <a href="../privacy/index.html#privaassist">privacy policy</a> for exactly what that sends.</li>
+  </ul>
+  <h2>Why isn't it on the Mac App Store?</h2>
+  <p>PrivaAssist's Terminal runs a real shell, and Read Screen and Workflow read other apps' text through macOS Accessibility. App Store apps aren't allowed to do either, so PrivaAssist is distributed directly, signed with a Developer ID and notarized by Apple.</p>
+  <h2>Updating</h2>
+  <p>PrivaAssist doesn't check for updates in the background, because it makes no network requests you didn't start. Download the latest version from this page and replace the copy in Applications; your documents, settings, and downloaded models are kept.</p>
+  <h2>Uninstalling</h2>
+  <p>Quit PrivaAssist and move it to the Trash. To remove its data and models too, delete <code>~/Library/Application Support/PrivaAssist</code>.</p>
+  <p><a href="../support/index.html#privaassist">Support</a> · <a href="../privacy/index.html#privaassist">Privacy</a> · <a href="../terms/index.html">Terms</a></p></div>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div><strong style="color:var(--ink)">PrivaSuite</strong><br>Private apps that do their work on your device.</div>
+    <div class="footer-links">
+      <a href="../support/index.html">Support</a>
+      <a href="../privacy/index.html">Privacy Policy</a>
+      <a href="../terms/index.html">Terms of Use</a>
+      <a href="mailto:support@harrisonsmith.ai">support@harrisonsmith.ai</a>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:20px">&copy; 2026 HSmithDev LLC. Apple, iPhone, iPad, and Mac are trademarks of Apple Inc.</div>
+</footer>
+</body>
+</html>
