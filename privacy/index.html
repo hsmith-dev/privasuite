@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111615" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+<link rel="stylesheet" href="../assets/style.css">
+<title>Privacy Policy | PrivaSuite</title>
+<meta name="description" content="How the PrivaSuite apps handle your data: documents, recordings, and notes are processed on your device and never sent to us.">
+<link rel="canonical" href="https://privasuite.harrisonsmith.ai/privacy/">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="../index.html" aria-label="PrivaSuite home"><img src="../assets/img/favicon.svg" alt="" width="28" height="28"><span>PrivaSuite</span></a>
+    <nav aria-label="Primary">
+      <a href="../index.html#apps">Apps</a>
+      <a href="../privacy/index.html" aria-current="page">Privacy</a>
+      <a href="../support/index.html">Support</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="doc"><div class="wrap doc-grid">
+<aside class="toc" aria-label="On this page"><p>On this page</p><ol>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#collect">What we collect</a></li>
+<li><a href="#downloads">Model downloads</a></li>
+<li><a href="#privaassist">PrivaAssist</a></li>
+<li><a href="#privapage">PrivaPage</a></li>
+<li><a href="#privameet">PrivaMeet</a></li>
+<li><a href="#privastudy">PrivaStudy</a></li>
+<li><a href="#storage">Storage and deletion</a></li>
+<li><a href="#recording">Recording other people</a></li>
+<li><a href="#apple">Apple services</a></li>
+<li><a href="#rights">Your rights</a></li>
+<li><a href="#children">Children</a></li>
+<li><a href="#website">This website and email</a></li>
+<li><a href="#changes">Changes</a></li>
+<li><a href="#ai">Built with AI assistance</a></li>
+<li><a href="#contact">Contact</a></li>
+</ol></aside>
+<article class="prose">
+<h1>Privacy Policy</h1>
+<p class="doc-meta">Effective October 31, 2026</p>
+
+<div class="summary"><p><strong>In short:</strong> PrivaAssist, PrivaPage, PrivaMeet, and PrivaStudy process your documents, recordings, transcripts, and notes on your device. HSmithDev LLC does not collect them, receive them, or have any way to access them. The apps have no accounts, no analytics, no advertising, and no tracking. The one exception you control is PrivaAssist's optional hosted models, which are off unless you turn them on with your own API key.</p></div>
+
+<h2 id="overview">Overview</h2>
+<p>This policy explains how the PrivaSuite apps (PrivaAssist for Mac, and PrivaPage, PrivaMeet, and PrivaStudy for iPhone, iPad, and Mac, together "the apps") handle information. The apps are published by HSmithDev LLC ("we", "us"). This policy also covers this website, https://privasuite.harrisonsmith.ai.</p>
+
+<h2 id="collect">What we collect</h2>
+<p>Through the apps, we collect nothing. We do not operate any server that the apps send your content to, and we never receive your documents, recordings, transcripts, summaries, flashcards, notes, or anything else you create or import ("Your Content").</p>
+<p>The apps contain no analytics SDK, no crash-reporting service that sends data to us, and no advertising or tracking framework. We do not sell or share personal information, and we do not track you across other companies' apps or websites.</p>
+
+<h2 id="downloads">Model downloads</h2>
+<p>The apps' AI models are too large to include in the download, so each app fetches them only when you ask (from its welcome screen, Settings, or the first time you use a feature that needs one). Files come over HTTPS from Hugging Face (huggingface.co and the content-delivery hosts it redirects to) and, for the neural voice's voice file, from GitHub (raw.githubusercontent.com). Each file is checked against a checksum built into the app before it is used.</p>
+<p>Like any download, the request reveals technical information needed to deliver the file, such as your IP address and basic device and network details. Those services handle that information under their own privacy policies. The request names only the file being downloaded and never includes Your Content.</p>
+
+<h2 id="privaassist" class="app-tag"><img src="../assets/img/privaassist-256.png" alt="" width="36" height="36">PrivaAssist</h2>
+<p>PrivaAssist is a Mac app distributed directly, outside the App Store. Its features run on your Mac:</p>
+<ul>
+<li><strong>Reading aloud</strong> uses the Kokoro neural voice (about 340 MB download) or macOS system voices.</li>
+<li><strong>Meeting transcription</strong> uses Whisper (about 220 MB download); <strong>summaries and drafting</strong> use the Qwen language model (about 3 GB download), both running locally through Apple's MLX and Core ML.</li>
+<li><strong>Read Screen, Workflow capture, and text recognition</strong> use macOS Accessibility and Apple's on-device Vision framework.</li>
+<li><strong>Organize</strong> reads the files you add and moves them only into folders you approve.</li>
+<li><strong>Terminal</strong> runs a shell on your Mac. What you type and what it prints are never sent anywhere.</li>
+</ul>
+<h3>Permissions</h3>
+<p>PrivaAssist asks for each permission only when you press its Request button, and works without the ones you decline. You can change them in System Settings, Privacy &amp; Security.</p>
+<ul>
+<li><strong>Microphone</strong>: meeting recording and dictation.</li>
+<li><strong>Camera</strong>: optional meeting video.</li>
+<li><strong>Screen Recording</strong>: meeting system audio, screen video, and on-screen text recognition.</li>
+<li><strong>Accessibility</strong>: reading selected or window text for Read Screen, and the context of steps in Workflow capture.</li>
+</ul>
+<h3>Optional hosted models</h3>
+<p>PrivaAssist can use a hosted AI service instead of an on-device model. This is <strong>off by default</strong>. To use it you turn on a master switch and then each capability separately (speech, transcription, or generation), enter your own API key, and confirm a plain-language statement of exactly what will leave your Mac. The key is stored only in your Mac's Keychain.</p>
+<ul>
+<li>When <strong>hosted speech</strong> is on, the text being read is sent to the provider you chose.</li>
+<li>When <strong>hosted transcription</strong> is on, the meeting's audio is sent.</li>
+<li>When <strong>hosted generation</strong> is on, the prompt (for example, the transcript to summarize) is sent.</li>
+</ul>
+<p>These requests go directly from your Mac to the provider you configure (Anthropic, or an OpenAI-compatible service at an address you enter), under your account with that provider and its privacy policy. They never pass through us. Screenshots, workflow capture images, raw audio outside transcription, Terminal input and output, and Read Screen text (unless you turn on its own separate switch) are never sent. Every hosted use shows a "Hosted" badge, and a local call history records when calls happened and their size, never their content. Offline mode blocks all of it, and the app never switches between hosted and on-device processing without telling you.</p>
+
+<h2 id="privapage" class="app-tag"><img src="../assets/img/privapage-256.png" alt="" width="36" height="36">PrivaPage</h2>
+<p>PrivaPage keeps its own copy of each PDF you import, extracts its text on your device (using Apple's on-device Vision framework for image-only pages), and reads it aloud with your device's built-in voices or, if you download it, the Kokoro neural voice (about 340 MB). Reading positions, bookmarks, folders, and settings stay on your device. PrivaPage asks for no special permissions; it opens only the files you choose.</p>
+
+<h2 id="privameet" class="app-tag"><img src="../assets/img/privameet-256.png" alt="" width="36" height="36">PrivaMeet</h2>
+<p>PrivaMeet records meetings and processes them on your device:</p>
+<ul>
+<li><strong>Transcription</strong> uses Whisper through the open-source WhisperKit library (about 220 MB download).</li>
+<li><strong>Summaries</strong> use an open-source Qwen language model running through Apple's MLX (about 1 GB, or about 300 MB for the compact option).</li>
+<li><strong>Speaker identification</strong>, if you choose it, analyzes the voices in a recording on your device to tell speakers apart and label its transcript. Its models (about 500 MB) download only after you confirm.</li>
+</ul>
+<p>Permissions: <strong>Microphone</strong>, to record meetings you start; and on iPhone and iPad, <strong>Face ID or Touch ID</strong>, only if you turn on App Lock. Authentication is handled by the system; PrivaMeet never receives biometric data, only whether authentication succeeded. When you share or export a recording or transcript, you choose where it goes, and the receiving app or service handles it under its own terms.</p>
+
+<h2 id="privastudy" class="app-tag"><img src="../assets/img/privastudy-256.png" alt="" width="36" height="36">PrivaStudy</h2>
+<p>PrivaStudy turns your material into study decks on your device. AI features such as card drafting use an open-source Qwen language model through Apple's MLX (about 1 GB download); lecture capture, dictation, and the voice tutor use Whisper (about 220 MB); narration uses system voices or the Kokoro neural voice (about 330 MB).</p>
+<ul>
+<li><strong>Web articles</strong>: when you paste a link, PrivaStudy loads that one page on your device, as a browser would, with no cookies or stored website data, and turns its text into a deck. The website you link to sees an ordinary page request from your device.</li>
+<li><strong>Microphone</strong>: lecture capture, dictation, and spoken questions to the voice tutor, transcribed on your device.</li>
+<li><strong>Notifications</strong>: an optional daily study reminder, scheduled on your device.</li>
+<li><strong>Screen Recording</strong> (Mac only): on-device text recognition when you use Read Screen.</li>
+</ul>
+
+<h2 id="storage">Storage and deletion</h2>
+<p>Your Content is stored in each app's private storage on your device. None of the apps sync to iCloud or any other cloud service. Deleting an item in the app removes it from that device. Deleting PrivaPage, PrivaMeet, or PrivaStudy removes the data they stored on that device.</p>
+<p>PrivaAssist keeps its data in <code>~/Library/Application Support/PrivaAssist</code> on your Mac; deleting that folder along with the app removes it. Files you move with Organize stay where you put them.</p>
+<p>Because nothing is stored on our servers, we cannot recover lost data. Use each app's export options to keep copies of anything important.</p>
+
+<h2 id="recording">Recording other people</h2>
+<p>Laws on recording conversations vary by location, and many places require the consent of everyone being recorded. You are responsible for knowing and following the laws that apply to you. See our <a href="../terms/index.html">Terms of Use</a>.</p>
+
+<h2 id="apple">Apple services</h2>
+<p>If you get an app from the App Store, Apple may provide us with aggregated, anonymized download and sales statistics and, if you opt in to sharing with developers, crash reports. These do not include Your Content.</p>
+
+<h2 id="rights">Your rights</h2>
+<p>Depending on where you live, you may have rights to access, correct, delete, or port personal information, or to opt out of its sale or sharing. Because we do not collect personal information through the apps, we have none to provide, correct, or delete, and we do not sell or share it. You control Your Content directly on your device. If you have emailed us, you can ask us to delete that correspondence.</p>
+
+<h2 id="children">Children</h2>
+<p>The apps are not directed to children under 13, and we do not knowingly collect personal information from children. The apps do not collect personal information from anyone.</p>
+
+<h2 id="website">This website and email</h2>
+<p>This website uses no cookies, analytics, or tracking, and loads no third-party fonts or scripts. It is hosted on GitHub Pages, and GitHub may log visitors' IP addresses for security and operation of its service, under the GitHub Privacy Statement.</p>
+<p>If you email us, we receive your email address and whatever you include in your message. We use it only to reply and to help with your request, and we do not add you to any mailing list. You can ask us to delete your correspondence at any time.</p>
+
+<h2 id="changes">Changes to this policy</h2>
+<p>If we change this policy, we will update the effective date above and publish the new version on this page. If a change is significant, such as an app starting to collect any data, we will also tell you in the app before it takes effect.</p>
+
+<h2 id="ai">Built with AI assistance</h2>
+<p>Portions of the apps' source code were written with the help of AI coding tools. This describes how the apps were built, not how they handle your data.</p>
+
+<h2 id="contact">Contact</h2>
+<p>Questions about this policy or your privacy can be sent to <a href="mailto:support@harrisonsmith.ai">support@harrisonsmith.ai</a>.</p>
+<p>HSmithDev LLC</p>
+
+</article>
+</div></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div><strong style="color:var(--ink)">PrivaSuite</strong><br>Private apps that do their work on your device.</div>
+    <div class="footer-links">
+      <a href="../support/index.html">Support</a>
+      <a href="../privacy/index.html">Privacy Policy</a>
+      <a href="../terms/index.html">Terms of Use</a>
+      <a href="mailto:support@harrisonsmith.ai">support@harrisonsmith.ai</a>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:20px">&copy; 2026 HSmithDev LLC. Apple, iPhone, iPad, and Mac are trademarks of Apple Inc.</div>
+</footer>
+</body>
+</html>
